@@ -1,0 +1,35 @@
+GET http://localhost:8080/device/1-12345678/test2
+
+
+###
+
+POST http://localhost:8080/device
+
+{
+  "name": "test",
+  "serialNumber": "1-12345678",
+  "machineCode": "test2"
+}
+
+###
+
+POST http://localhost:8080/device
+
+{
+  "name": "test",
+  "serialNumber": "1-12345679",
+  "machineCode": "test3"
+}
+
+
+###
+
+PUT http://localhost:8080/device
+
+{
+  "name": "new test",
+  "serialNumber": "1-12345678",
+  "machineCode": "test2"
+}
+
+
